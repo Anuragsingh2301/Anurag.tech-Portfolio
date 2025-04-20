@@ -7,7 +7,7 @@ export const Home=()=>{
        
        <RevealOnScroll>
           <div className='text-center px-4'>
-            <h1 className="text-5xl md-text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">Hi, I'm Anuragg Tech</h1>
+            <h1 className="text-5xl md-text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">Hi, I'm Anurag Singh</h1>
             <p className="text-gray-100 max-w-lg mb-8 mx-auto text-lg leading-relaxed">
             I'm a Computer Science student aiming to become a full-stack developer. Currently focused on learning React, Tailwind CSS, and improving my problem-solving skills through DSA.
             </p>
