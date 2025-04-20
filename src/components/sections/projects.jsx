@@ -87,7 +87,7 @@ export const Projects=()=>{
                         ))}
                     </div>
                     <div className=" mt-4 flex justify-between items-center">    
-                        <a href="https://github.com/Anuragsingh2301/Lyrics_finder.git" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors my-4">View Project &rarr;
+                        <a href="https://github.com/Anuragsingh2301/Anurag.tech-Portfolio.git" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors my-4">View Project &rarr;
 
                         </a>
                         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Repo" className="w-6 h-6 hover:opacity-80 transition-opacity" />
