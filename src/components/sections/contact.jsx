@@ -33,8 +33,9 @@ export const Contact=()=>{
 
     return(
     <section id="contact" className="min-h-screen flex  justify-center items-center py-20">
-        <RevealOnScroll>
-            <div className="w-150 mx-auto px-5">
+           <div className="w-[80%] sm:w-[600px] mx-auto px-5">
+           <RevealOnScroll>
+
                 <h2 className="font-medium text-3xl mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center leading-right">
                     Get In Touch 
                 </h2>
@@ -56,8 +57,9 @@ export const Contact=()=>{
                     </button>
 
                 </form>
-            </div>
-        </RevealOnScroll>
+            
+            </RevealOnScroll>
+        </div>
     </section>
     );
 };
