@@ -1,11 +1,13 @@
+import { motion } from "motion/react";
+import { Canvas } from "@react-three/fiber";
 import { useState,useEffect } from "react";
-
-
+import {Stars} from "@react-three/drei";
 
 export const LoadingScreen = ({iscomplete}) => {
     
     const[text,settext] = useState("");
     const fulltext="Hello my name is Anurag";
+    
 
     useEffect(()=>{
         let index=0;
@@ -23,13 +25,14 @@ export const LoadingScreen = ({iscomplete}) => {
 
             }
 
-        }, 100);
+        }, 150);
 
         return ()=>clearInterval(interval)
     },[iscomplete])
 
     return (
-        <div className="fixed inset-1.5 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
+        <motion.div 
+        className="fixed inset-1.5 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
             <div className="mb-4 text-4xl font-mono font-bold"> 
                 {text}<span className="animate-blink ml-1">|</span>
             </div>
@@ -38,6 +41,18 @@ export const LoadingScreen = ({iscomplete}) => {
                     
                 </div>
             </div>
-        </div>
+            <div className="absolute inset-0 z-0 ">
+                <Canvas >
+                    <Stars 
+                        radius={100} 
+                        depth={50} 
+                        count={2500} 
+                        factor={4} 
+                        saturation={0.5} 
+                        fade 
+                    />
+                </Canvas>
+            </div>
+        </motion.div>
     );
 };
