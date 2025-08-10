@@ -6,7 +6,7 @@ import {Stars} from "@react-three/drei";
 export const LoadingScreen = ({iscomplete}) => {
     
     const[text,settext] = useState("");
-    const fulltext="Hello! I’m Anurag Singh";
+    const fulltext="Hello, my name is Anurag.";
     
 
     useEffect(()=>{
